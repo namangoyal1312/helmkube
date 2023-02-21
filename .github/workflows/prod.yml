@@ -2,7 +2,7 @@ name: Build and deploy an app to AKS with Helm
 
 on:
   push:
-    branches: master
+    branches: main
 
 env:
   AZURE_CONTAINER_REGISTRY: "azurerepo1"
