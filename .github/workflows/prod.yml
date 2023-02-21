@@ -5,7 +5,7 @@ on:
     branches: main
 
 env:
-  AZURE_CONTAINER_REGISTRY: "azurerepo1"
+  AZURE_CONTAINER_REGISTRY: "oyohelm"
   CONTAINER_NAME: "test1"
   RESOURCE_GROUP: "logic-app-rg"
   CLUSTER_NAME: "oyo-helm-aks"
