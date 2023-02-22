@@ -70,9 +70,11 @@ jobs:
           
         - name: Kubernetes CLI (kubectl)
           uses: tale/kubectl-action@v1
-            - run:|
-              helm repo add bitnami https://charts.bitnami.com/bitnami
-              helm install my-nginx bitnami/nginx --version 13.2.27
+          with:
+            base64-kube-config: ~/.kube/config
+              - run:|
+                  helm repo add bitnami https://charts.bitnami.com/bitnami
+                  helm install my-nginx bitnami/nginx --version 13.2.27
 
 #         # Runs Helm to create manifest files
 #         - name: Bake deployment
